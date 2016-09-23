@@ -19,4 +19,4 @@ rm headers_temp.md content_temp.md
 git add .
 git commit -m "Add $_postName"
 git push
-hexo deploy
+hexo generate --deploy
