@@ -16,3 +16,7 @@ _time=$(date +%H:%M:%S)
 echo >> $_file
 echo "Última actualización: **$_time**" >> $_file
 rm headers_temp.md content_temp.md
+git add .
+git commit -m "Add $_postName"
+git push
+hexo deploy
