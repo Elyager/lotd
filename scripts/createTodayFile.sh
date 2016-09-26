@@ -1,4 +1,5 @@
 #!/usr/local/bin/zsh
+source $HOME/.zshrc
 _now=$(date +"%Y%m%d")
 _postName="LOTD-$_now"
 _file="$_postName.md"
