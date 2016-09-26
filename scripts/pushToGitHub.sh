@@ -23,4 +23,5 @@ git push
 pwd
 whoami
 echo "WHAT?!"
+cl
 hexo generate --deploy
