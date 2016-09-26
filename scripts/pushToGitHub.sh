@@ -22,4 +22,5 @@ git commit -m "Add $_postName"
 git push
 pwd
 whoami
+echo "WHAT?!"
 hexo generate --deploy
