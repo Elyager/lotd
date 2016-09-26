@@ -7,7 +7,7 @@ pwd
 echo "Creating file $_file to save links of the day"
 echo "## LOTD-$_now" > $_file
 echo "File was created"
-cd "$HOME/Documents/HubLab/blogdelyager/source/_posts"
+cd $HOME/Documents/HubLab/blogdelyager/source/_posts
 pwd
 echo "Creating post in blogdelyager"
 hexo new post $_postName
