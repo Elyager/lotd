@@ -21,8 +21,4 @@ rm headers_temp.md content_temp.md
 git add .
 git commit -m "Add $_postName"
 git push
-pwd
-whoami
-echo "WHAT?!"
-cl
 hexo generate --deploy
