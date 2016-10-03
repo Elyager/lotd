@@ -1,12 +1,9 @@
 #!/usr/local/bin/zsh
 source $HOME/.zshrc
-_now=$(date +"%Y%m%d")
-_postName="LOTD-$_now"
-_file="$_postName.md"
 cd $HOME/Documents/Hublab/lotd/content/
 pwd
-echo "Creating file $_file to save links of the day"
-echo "## LOTD-$_now" > $_file
+echo "Creating file $TODAY_POST_NAME.md to save links of the day"
+echo "## $TODAY_POST_NAME" > $TODAY_POST_FILENAME
 echo "File was created"
 cd $HOME/Documents/HubLab/blogdelyager/source/_posts
 pwd
@@ -15,5 +12,5 @@ hexo new post $_postName
 echo "Post created!"
 echo "Add lotd tag"
 pwd
-sed -e "4s/.*/tags: lotd/" $_file > "temp.md"
-mv temp.md $_file
+sed -e "4s/.*/tags: lotd/" $TODAY_POST_FILENAME > "temp.md"
+mv temp.md $TODAY_POST_FILENAME
