@@ -11,6 +11,7 @@ echo "Today News updated in lotd repo"
 echo "Publish post in blogdelyager"
 cd $HOME/Documents/HubLab/blogdelyager/source/_posts
 pwd
+[ -f $_file ] && echo "File $_file found" || echo "File $_file Not found" && exit 1
 head -n 5 $_file > headers_temp.md
 tail -n +2 $HOME/Documents/HubLab/lotd/content/$_file > content_temp.md
 cat headers_temp.md content_temp.md > $_file
