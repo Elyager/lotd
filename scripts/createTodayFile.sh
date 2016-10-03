@@ -8,7 +8,7 @@ echo "File was created"
 cd $HOME/Documents/HubLab/blogdelyager/source/_posts
 pwd
 echo "Creating post in blogdelyager"
-hexo new post $_postName
+hexo new post $TODAY_POST_NAME
 echo "Post created!"
 echo "Add lotd tag"
 pwd
