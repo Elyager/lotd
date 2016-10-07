@@ -1,4 +1,5 @@
 #!/usr/local/bin/zsh
+echo $HOME
 source $HOME/.zshrc
 cd $HOME/Documents/HubLab/lotd
 git add .
